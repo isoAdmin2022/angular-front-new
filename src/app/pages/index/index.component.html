@@ -1,0 +1,450 @@
+<nav
+  class="navbar navbar-expand-lg fixed-top navbar-transparent"
+  color-on-scroll="100"
+  id="navbar-top"
+>
+  <div class="container">
+    <div class="navbar-translate">
+      <a
+        class="navbar-brand"
+        placement="bottom"
+        [routerLink]="['/home']"
+        target="_blank"
+        tooltip="Desiñado para ciegos"
+      >
+        <span> SILMA</span> El mejor guia en tu hogar
+      </a>
+      <button
+        aria-controls="navigation-index"
+        aria-label="Toggle navigation"
+        class="navbar-toggler navbar-toggler"
+        [attr.aria-expanded]="!isCollapsed"
+        (click)="isCollapsed = !isCollapsed"
+        id="navigation"
+        type="button"
+      >
+        <span class="navbar-toggler-bar bar1"> </span>
+        <span class="navbar-toggler-bar bar2"> </span>
+        <span class="navbar-toggler-bar bar3"> </span>
+      </button>
+    </div>
+    <div
+      class="navbar-collapse justify-content-end"
+      [collapse]="isCollapsed"
+      id="navigation"
+    >
+      <div class="navbar-collapse-header">
+        <div class="row">
+          <div class="col-6 collapse-brand"><a>SILMA</a></div>
+          <div class="col-6 collapse-close text-right">
+            <button
+              aria-controls="navigation-index"
+              aria-label="Toggle navigation"
+              class="navbar-toggler"
+              [attr.aria-expanded]="!isCollapsed"
+              (click)="isCollapsed = !isCollapsed"
+              id="navigation"
+              type="button"
+            >
+              <i class="tim-icons icon-simple-remove"> </i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <ul class="navbar-nav">
+        <li (click)="toGo(2)" class="nav-item p-0 item-select">
+          <a
+            class="nav-link"
+            placement="bottom"
+            target="_blank"
+            tooltip="Visita nuestro Blog"
+          >
+          <i class="fa-solid fa-book"></i>
+            <p class="d-lg-none d-xl-none">Twitter</p>
+          </a>
+        </li>
+        <li (click)="toGo(1)" class="nav-item p-0 item-select">
+          <a
+            class="nav-link"
+            placement="bottom"
+            target="_blank"
+            tooltip="Sobre la Aplicacion"
+          >
+            <i class="fa-solid fa-circle-question"></i>
+            <p class="d-lg-none d-xl-none">Sobre la Aplicacion</p>
+          </a>
+        </li>
+        <!--
+        <li class="dropdown nav-item" dropdown>
+          <a
+            class="dropdown-toggle nav-link dropdown-toggle"
+            data-toggle="dropdown"
+            dropdownToggle
+            href="javascript:void(0)"
+          >
+            <i class="fa fa-cogs d-lg-none d-xl-none"> </i> Getting started
+          </a>
+          <div class="dropdown-menu dropdown-with-icons" *dropdownMenu>
+            <a
+              class="dropdown-item"
+              href="https://demos.creative-tim.com/blk-design-system-angular/#/documentation/overview"
+            >
+              <i class="tim-icons icon-paper"> </i> Documentation
+            </a>
+            <a class="dropdown-item" [routerLink]="['/register']">
+              <i class="tim-icons icon-bullet-list-67"> </i> Register Page
+            </a>
+            <a class="dropdown-item" [routerLink]="['/landing']">
+              <i class="tim-icons icon-image-02"> </i> Landing Page
+            </a>
+            <a class="dropdown-item" [routerLink]="['/profile']">
+              <i class="tim-icons icon-single-02"> </i> Profile Page
+            </a>
+          </div>
+        </li>
+        -->
+
+        <li class="nav-item">
+          <a
+            class="nav-link btn btn-default d-none d-lg-block"
+            href="javascript:void(0)"
+            (click)="scrollToDownload()"
+          >
+            <i class="tim-icons icon-puzzle-10"> </i> Documentacion
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="wrapper">
+  <div class="page-header header-filter">
+    <div class="squares square1"></div>
+    <div class="squares square2"></div>
+    <div class="squares square3"></div>
+    <div class="squares square4"></div>
+    <div class="squares square5"></div>
+    <div class="squares square6"></div>
+    <div class="squares square7"></div>
+    <div class="container">
+      <div class="content-center brand">
+        <h1 class="h1-seo">SILMA</h1>
+        <h3>
+          Un asistente virtual para personas con vision reducida exploren el mundo
+        </h3>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+
+    <!-- INICIO SECCION -->
+    <div class="section section-typo">
+      <div class="section section-tabs">
+        <div class="container">
+
+          <div class="row">
+            <h1 class="display-3">Descarga la App</h1>
+          </div> 
+
+          <div class="row">
+          
+            <div class="col-6">
+
+              <div class="flex-position">
+
+                <div class="card" style="width: 18rem;">
+                  <img src="../../../assets/img-profile/17004-apple-logo-animation.gif" class="card-img-top" alt="...">
+                  
+                  <div class="card-body">
+                    <p class="card-text">Descarga la app y disfrutala en tu dispositivo ios</p>
+                    <div style="text-align: center;">
+                      <a href="#" class="btn btn-primary">Descargar</a>
+                    </div>
+                  </div>
+                  
+                </div>
+
+              </div>
+              
+
+
+            </div>
+
+            <div class="col-6">
+
+              <div class="flex-position">
+                <div class="card" style="width: 18rem;">
+                  <img src="../../../assets/img-profile/30350-android-logo.gif" class="card-img-top" alt="...">
+                  
+                  <div class="card-body">
+                    <p class="card-text">Descarga la app y disfrutala en tu dispositivo android</p>
+                    <div style="text-align: center;">
+                      <a href="#" class="btn btn-primary">Descargar</a>
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+              </div>
+
+            </div>
+
+          </div> 
+
+
+        </div>
+      </div>
+    </div>
+    <!-- FIN SECCION -->
+
+    <div class="section section-typo">
+      <div class="section section-tabs">
+        <div class="container">
+
+          <div class="row">
+            <h5 class="display-5">Tiflotecnología</h5>
+          </div> 
+
+          <div class="row">
+            <span style="font-size: 120%;">La tiflotecnología se define como: Conjunto de recursos (aparatos adaptados, software accesibles etc.) que permiten acercarse a la tecnología con el fin de mejorar la calidad de vida y aumentar la autonomía de las personas con discapacidad, especialmente discapacidad visual.
+
+              Algunos de los recursos más destacables en este ámbito son:
+              
+              El escáner, La tableta digitalizadora, Las pizarras interactivas, Las pantallas interactivas, Una  Tablet PC</span>
+          </div> 
+          <br>
+
+          <div class="row">
+
+            <div class="col-12">
+              <iframe width="100%" height="500" src="https://www.youtube.com/embed/hGrm8G9RQxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+          </div>
+          <br>
+          <div class="row">
+
+            <div class="col-12">
+              <iframe  width="100%" height="500" src="https://www.youtube.com/embed/ULHSFxcA80E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <!-- FIN TODoooooooooooooooo -->
+
+          <br>
+          <br>
+          <br>
+
+          <div class="row">
+            <h5 class="display-5">Sistema Braille</h5>
+          </div> 
+
+          <div class="row">
+            <span style="font-size: 120%;">Se conoce como Braille o Sistema Braille a un sistema de lectura y escritura pensado para personas no videntes, basado en el sentido del tacto. Fue creado a mediados del siglo XIX por Louis Braille, un pedagogo francés que a los pocos años de edad quedó ciego por accidente. Está basado en un sistema previo de lecto-escritura diseñado por Charles Barbier de la Serre.
+
+              El Braille no es una lengua o un idioma propio, sino un mecanismo de escritura en base a puntos de relieve sobre una superficie lisa. Se trata de una manera diferente de representar el alfabeto tradicional de las lenguas verbales.</span>
+          </div> 
+          <br>
+
+          <div class="row">
+
+            <div class="col-12">
+              <iframe width="100%" height="500" src="https://www.youtube.com/embed/KZkYxXgcnt4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+          </div>
+          <br>
+          <div class="row">
+
+            <div class="col-12">
+              <iframe width="100%" height="500" src="https://www.youtube.com/embed/RrVSMBu1fws" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+    
+    <!-- INICIO SECCION -->
+    <div class="section section-typo">
+      <div class="section section-tabs">
+        <div class="container">
+
+          <div class="row">
+            <h1 class="display-3">Novedades</h1>
+          </div> 
+
+          <div class="row">
+
+            <div class="col-4">
+
+              <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2020/01/11/15/28/robot-4757878_960_720.jpg" class="card-img-top" alt="yo habia ponido aqui mi imagen">
+                <div class="card-body">
+                  <h5 class="card-title">LaMDA, la maquina que parecia un niño de siete años</h5>
+                  <p class="card-text">Un ingeniero de Google cree haber hablado con un robot con voluntad propia. Aunque la comunidad científica no le da crédito, los avances de la inteligencia artificial ...</p>
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="col-4">
+
+
+              <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2017/12/10/17/00/robot-3010309_960_720.jpg" class="card-img-top" alt="yo habia ponido aqui mi imagen">
+                <div class="card-body">
+                  <h5 class="card-title">IA mas humana que nunca</h5>
+                  <p class="card-text">Los programas de IA utilizan modelos que desarrollan en contextos observacionales porque analizan como otros usuarios se comunican, así pues, son capaces de imitar conversaciones.</p>
+                  <!--
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  -->
+                  
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="col-4">
+
+              <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2016/03/27/22/18/smartphone-1284501_960_720.jpg" class="card-img-top" alt="yo habia ponido aqui mi imagen">
+                <div class="card-body">
+                  <h5 class="card-title">El internet de las cosas</h5>
+                  <p class="card-text">Desde la transferencia hasta la inteligencia, puedes aprovechar el amplio rango de piezas fundamentales del IoT de Google Cloud para obtener valor de los datos de tus dispositivos.</p>
+                  <!--
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  -->
+                  
+                </div>
+              </div>
+              
+            </div>
+
+
+          </div>
+
+
+        </div>
+      </div>
+      <!-- FIN SECCION -->
+
+
+
+      <img class="path" src="assets/img/path1.png" />
+      <!--
+      <img class="path path1" src="assets/img/path3.png" />
+      -->
+      <div class="container">
+        <!--
+        <h3 class="title">Typography</h3>
+        -->
+        <!-- ################################################################3  -->
+        <div id="images">
+          <h3 class="mb-5">Desarrolladores</h3>
+
+          <div class="row">
+            <!--Item 1-->
+            <div class="col-sm-3 col-6">
+              <small class="d-block text-uppercase font-weight-bold mb-4">
+               @Fabiola Ceron
+              </small>
+              <img
+                alt="Circle image"
+                class="img-fluid rounded-circle shadow"
+                src="../../../assets/img-profile/fceron-3edit.jpg"
+                style="width: 150px;"
+              />
+            </div>
+            <!--Item 2-->
+            <div class="col-sm-3 col-6">
+              <small class="d-block text-uppercase font-weight-bold mb-4">
+                @Michael Mejia
+              </small>
+              <img
+                alt="Circle image"
+                class="img-fluid rounded-circle shadow"
+                src="../../../assets/img-profile/mmejia-edit.jpg"
+                style="width: 150px;"
+              />
+            </div>
+
+            <!--Item 3-->
+            <div class="col-sm-3 col-6">
+              <small class="d-block text-uppercase font-weight-bold mb-4">
+                @Bryan Orozco
+              </small>
+              <img
+                alt="Circle image"
+                class="img-fluid rounded-circle shadow"
+                src="../../../assets/img-profile/borozco-edit.jpg"
+                style="width: 150px;"
+              />
+            </div>
+
+            <!--Item 4-->
+            <div class="col-sm-3 col-6">
+              <small class="d-block text-uppercase font-weight-bold mb-4">
+                @Carlos Calero
+              </small>
+              <img
+                alt="Circle image"
+                class="img-fluid rounded-circle shadow"
+                src="../../../assets/img-profile/carlosChequeto.jpeg"
+                style="width: 150px;"
+              />
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+  </div> <!-- FIN MAIN -->
+
+
+  <footer style="background: #202454 !important;" class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4"><h1 class="title">UNIVERSIDAD NACIONAL DE INGENIERIA</h1></div>
+        <div class="col-md-4">
+          <img style="width: 80%;" src="../../../assets/img-profile/animation_500_l4l4rd9l.gif" alt="">
+        </div>
+        <div class="col-md-4">
+          <h3 class="title">Siguenos:</h3>
+          <div class="btn-wrapper profile">
+            <a
+              class="btn btn-icon btn-neutral btn-round btn-simple mr-1"
+              href="https://twitter.com/creativetim"
+              target="_blank"
+            >
+              <i class="fab fa-twitter"> </i>
+            </a>
+            <a
+              class="btn btn-icon btn-neutral btn-round btn-simple mr-1"
+              href="https://www.facebook.com/creativetim"
+              target="_blank"
+            >
+              <i class="fab fa-facebook-square"> </i>
+            </a>
+            <a
+              class="btn btn-icon btn-neutral btn-round btn-simple"
+              href="https://dribbble.com/creativetim"
+              target="_blank"
+            >
+              <i class="fab fa-dribbble"> </i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
